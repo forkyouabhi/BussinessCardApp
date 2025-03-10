@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Specify rules for which shared preferences should be backed up -->
+    <cloud-backup>
+        <include domain="sharedpref" path=".*" />
+        <include domain="database" path=".*" />
+        <include domain="file" path=".*" />
+        <include domain="external" path=".*" />
+    </cloud-backup>
+
+    <!-- Define rules for what should be restored -->
+    <device-transfer>
+        <include domain="sharedpref" path=".*" />
+        <include domain="database" path=".*" />
+        <include domain="file" path=".*" />
+        <include domain="external" path=".*" />
+
+        <!-- Ensure that cache and temp exclusions are within an included domain -->
+        <exclude domain="file" path="files/cache/.*"
+            tools:ignore="FullBackupContent" />
+        <exclude domain="external" path="files/temp/.*"
+            tools:ignore="FullBackupContent" />
+    </device-transfer>
+
+</data-extraction-rules>

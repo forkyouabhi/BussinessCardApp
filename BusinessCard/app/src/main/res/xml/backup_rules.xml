@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include shared preferences -->
+    <include domain="sharedpref" path="."/>
+
+    <!-- Include database -->
+    <include domain="database" path="."/>
+
+    <!-- Include all files in app storage -->
+    <include domain="file" path="."/>
+
+    <!-- Include external storage -->
+    <include domain="external" path="."/>
+
+    <!-- Exclude a specific file (e.g., user_data.txt) -->
+    <exclude domain="file" path="user_data.txt"/>
+</full-backup-content>
