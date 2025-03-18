@@ -98,8 +98,9 @@ class MainActivity : ComponentActivity(), SensorEventListener {
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        // Not needed for now
+        TODO("Not yet implemented")
     }
+
 }
 
 @Composable
