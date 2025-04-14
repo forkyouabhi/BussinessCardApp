@@ -98,7 +98,8 @@ BussinessCardApp/
 
 ## Authors
 
-- Your Name
+- Abhijeet Singh
+- Gaurav Dev
 - COMP-2430 Mobile Computing Technologies
 
 ## License
